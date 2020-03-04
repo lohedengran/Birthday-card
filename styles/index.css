@@ -1,0 +1,38 @@
+.body {
+  background-color: indianred;
+}
+.candles {
+  width: 500px;
+}
+.ballons {
+  width: 300px;
+  animation: imgRotate 3.5s ease infinite;
+}
+.cocktail {
+  width: 300px;
+  animation: imgZoom 3.5s ease infinite;
+}
+
+@keyframes imgZoom {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes imgRotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
