@@ -1,6 +1,12 @@
 .body {
   background-color: indianred;
 }
+.card {
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 .candles {
   width: 500px;
 }
@@ -8,23 +14,6 @@
   width: 300px;
   animation: imgRotate 3.5s ease infinite;
 }
-.cocktail {
-  width: 300px;
-  animation: imgZoom 3.5s ease infinite;
-}
-
-@keyframes imgZoom {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(10deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-
 @keyframes imgRotate {
   0% {
     transform: scale(1) rotate(0deg);
@@ -36,3 +25,31 @@
     transform: scale(1) rotate(0deg);
   }
 }
+.cocktail {
+  width: 300px;
+  animation: imgZoom 3.5s ease infinite;
+}
+@keyframes imgZoom {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+.cat {
+  max-width: 100px;
+  position: absolute;
+  top: 500px;
+  animation: cat 10s infinite;
+}
+@keyframes cat {
+  0% {left: -120%}
+  100% {left: 120%}
+}
+}
+
+
